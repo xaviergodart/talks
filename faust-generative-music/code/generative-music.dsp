@@ -45,11 +45,11 @@ with {
 };
 trigger1 = sequencer%2==0 : *(randomtrig) : hbargraph("trigger1", 0, 1);
 trigger2 = sequencer%2==1 : *(randomtrig) : hbargraph("trigger2", 0, 1);
-lead1 = os.sawtooth(randomnote) : ve.moog_vcf(0.9, 1000) : *(en.ar(0.01, 0.3, trigger1))
+lead1 = os.sawtooth(randomnote) : ve.moog_vcf(0.9, 1000) : *(en.ar(0.01, 0.3, trigger1)) : *(mix)
 with {
     mix = hslider("lead1 volume", 0.4, 0, 1, 0.1);
 };
-lead2 = os.square(randomnote*2) : ve.moog_vcf(0.9, 1000) : *(en.ar(0.01, 0.3, trigger2))
+lead2 = os.square(randomnote*2) : ve.moog_vcf(0.9, 1000) : *(en.ar(0.01, 0.3, trigger2)) : *(mix)
 with {
     mix = hslider("lead2 volume", 0.4, 0, 1, 0.1);
 };
