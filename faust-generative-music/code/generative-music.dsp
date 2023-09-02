@@ -1,11 +1,11 @@
 import("stdfaust.lib");
 
 // Metronome
+bpm = hslider("bpm", 40, 40, 240, 1);
 metronome = ba.beat(bpm);
 
 // Sequencer
 steps = 16;
-bpm = hslider("bpm", 40, 40, 240, 1);
 sequencer = metronome : ba.pulse_countup_loop(steps-1, 1) : hbargraph("seq",0,steps-1);
 
 // Random Trigger
