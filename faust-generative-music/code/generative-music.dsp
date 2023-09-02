@@ -62,16 +62,7 @@ with {
 };
 
 // Reverb
-reverb = re.greyhole(dt, damp, size, early_diff, feedback, mod_depth, mod_freq)
-with {
-    dt = hslider("Reverb Delay Time",28,1,60,1);
-    damp = hslider("Reverb Damping",0.7,0,1,0.1);
-    size = hslider("Reverb Size",2.6,0.5,6,0.1);
-    early_diff = hslider("Reverb Early diff",0.6,0,1,0.1);
-    feedback = hslider("Reverb Feedback",0.4,0,1,0.1);
-    mod_depth = hslider("Reverb Mod Depth",0.1,0,1,0.1);
-    mod_freq = hslider("Reverb Mod Freq",1.7,0,10,0.1);
-};
+reverb = re.greyhole(28, 0.7, 2.6, 0.6, 0.4, 0.1, 1.7);
 
 
 // Main process
