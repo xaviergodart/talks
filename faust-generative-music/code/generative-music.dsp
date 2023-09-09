@@ -19,7 +19,7 @@ with {
 
 // 03 Drone
 env = en.arfe(20, 20, 0.1, randomtrig == 1);
-voice(freq, detune, vol) = os.osc(freq), os.square(freq*2)*0.3, os.triangle(freq+detune) :> *(env) : *(vol);
+voice(freq, detune, vol) = os.osc(freq), os.square(freq*2)*0.3, os.triangle(freq+detune) :> *(vol);
 drone = 
     voice(root, 0, voicelfo2),
     voice(fifth, 0, 1),
