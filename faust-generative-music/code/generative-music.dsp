@@ -8,8 +8,10 @@ with {
 */
 
 // 01 Metronome
-bpm = hslider("bpm", 40, 40, 240, 1);
-metronome = ba.beat(bpm);
+metronome = ba.beat(bpm)
+with {
+    bpm = hslider("bpm", 40, 40, 240, 1);
+};
 
 // 02 Random Trigger
 randomtrig = 1 : *(no.noise : *(0.5) : +(0.5) : ba.sAndH(metronome) : hbargraph("random value", 0, 1) < probability : hbargraph("trigger", 0, 1))

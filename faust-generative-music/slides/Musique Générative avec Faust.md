@@ -36,6 +36,11 @@ theme: simple
 ![modular synth|300](https://upload.wikimedia.org/wikipedia/commons/3/3d/Steveporcaro_toto.jpg)
 <sub><sup>https://www.flickr.com/photos/jamesthephotographer/120916737/</sup></sub>
 
+note:
+Années 60
+Usage dès les années 70 en conjonction avec des delays à bandes
+Modules algorithme depuis l'avènement du numérique
+
 ---
 
 ### VCV Rack
@@ -64,7 +69,7 @@ Besoin d'embarquer le moteur dans un système permettant ce genre d'expérience
 TODO: image/video
 
 note:
-Expérience sensorielle (sonore et auditive)
+Expérience sensorielle (visuelle et sonore)
 
 ---
 
@@ -99,9 +104,15 @@ C++ / Javascript / Python / Swift / Java / etc...
 - Transpileur vers C++
 - Performant
 - Cible de multiple plateformes
-- Code très concis
 
 note:
+Français (Lyon), mature, depuis 2002
+
+Avantages:
+ - code concis
+ - versionable
+
+Platformes:
 	 - RaspberryPI
 	 - Mobile (iOS, Android)
 	 - Bela / Electro-Smith Daisy
