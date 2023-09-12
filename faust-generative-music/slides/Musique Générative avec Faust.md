@@ -65,8 +65,9 @@ Besoin d'embarquer le moteur dans un système permettant ce genre d'expérience
 ---
 
 ### Zen by Deezer
+#### Expérience visuelle et sonore
 
-TODO: image/video
+![](serenity-break.png)
 
 note:
 Expérience sensorielle (visuelle et sonore)
