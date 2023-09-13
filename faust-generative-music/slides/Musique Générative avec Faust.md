@@ -104,7 +104,7 @@ C++ / Javascript / Python / Swift / Java / etc...
 - Langage fonctionnel
 - Transpileur vers C++
 - Performant
-- Cible de multiple plateformes
+- Cible de multiples plateformes
 
 note:
 Français (Lyon), mature, depuis 2002
